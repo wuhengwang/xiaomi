@@ -1,0 +1,210 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 12px;
+    font-family: arial, "Hiragino Sans GB", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+    background: #f5f5f5;
+    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+a, a:active, a:hover {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+input {
+    outline: none;
+}
+
+/***/
+.bigBox {
+    min-width: 854px;
+    width: 100%;
+    height: 100%;
+}
+
+.bigBox .container {
+    width: 100%;
+    height: 100%;
+}
+
+.warp {
+    padding-bottom: 80px;
+}
+
+.inner {
+    background-color: #fff;
+    width: 854px;
+    margin: 0 auto 20px;
+    position: relative;
+    min-height: 620px;
+}
+
+.inner .top a {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../img/xuebitu7.png") no-repeat 0 0;
+}
+
+.inner .top a:hover {
+    background: url("../img/sprite_login.gif") no-repeat 0 0;
+}
+
+.inner .two {
+    padding: 50px 0 32px;
+}
+
+.inner .two em {
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    background: url("../img/LOGO-TOP.png") no-repeat 0 0;
+}
+
+.inner .two p {
+    font-size: 30px;
+    color: #424242;
+    font-weight: normal;
+    padding-top: 22px;
+    text-align: center;
+}
+
+.inner .three .three-inner {
+    width: 358px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.inner .three .three-inner input {
+    margin-bottom: 14px;
+    border: 1px solid #e0e0e0;
+    width: 326px;
+    height: 22px;
+    line-height: 22px;
+    padding: 13px 16px 13px 14px;
+    display: block;
+
+}
+
+#submit {
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 39px;
+    background-color: #ef5b00;
+}
+
+.inner .four .four-1 {
+    width: 358px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.inner .four .four-1 p:before, .inner .four .four-1 p:after {
+    width: 132px;
+    height: 3px;
+    border-top: 1px solid #e0e0e0;
+    content: "";
+    text-align: center;
+    display: inline-block;
+}
+
+.inner .four .four-1 p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inner .four .four-2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.inner .four .four-2 a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 12px
+}
+
+.inner .four .four-2 .a1 {
+    background: url("../img/xuebitu9.png") no-repeat 0 0;
+}
+.inner .four .four-2 .a2 {
+    background: url("../img/xuebitu9.png") no-repeat -30px 0;
+}
+.inner .four .four-2 .a3 {
+    background: url("../img/xuebitu9.png") no-repeat -60px 0;
+}
+
+.inner .four .four-2 .a1:hover {
+    background: url("../img/xuebitu9.png") no-repeat 0 -30px;
+}
+.inner .four .four-2 .a2:hover {
+    background: url("../img/xuebitu9.png") no-repeat -30px -30px;
+}
+.inner .four .four-2 .a3:hover {
+    background: url("../img/xuebitu9.png") no-repeat -60px -30px;
+}
+.inner .five {
+    padding-top: 55px;
+    text-align: center;
+    color: #e0e0e0;
+}
+.inner .five a{
+    padding: 0 9px;
+    font-size: 14px;
+    color: #757575;
+}
+.container .next{
+    height: 80px;
+    margin-top: -80px;
+    line-height: 1.5;
+    text-align: center;
+}
+.next .div1 a{
+    color: #333333;
+    padding: 0 10px;
+}
+.next .div1 a:hover{
+    color: #757575;
+}
+.next .div1 span{
+    color: #333333;
+}
+.next p{
+    padding: 10px;
+}
+.next p a{
+    color: #757575;
+}
+
+
+

@@ -1,0 +1,1557 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+
+}
+
+img {
+    border: none;
+}
+
+input {
+    outline: 0;
+    border: none;
+    background: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:active, a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear:after, .clear:before {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#top-nav {
+    height: 40px;
+    background: #333;
+    min-width: 1226px;
+}
+
+.container {
+    width: 1226px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container:after {
+    content: "";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.container .containerLeft {
+    float: left;
+    line-height: 40px;
+    width: 533px;
+}
+
+#container .containerLeft a:hover, #container .Login-Register a:hover {
+    color: #fff;
+}
+
+#container a {
+    color: #b0b0b0;
+}
+
+.containerLeft span, .Login-Register span {
+    color: #424242;
+    margin: 0 6px;
+}
+
+.container .Shopping-Cart, .container .Login-Register {
+    float: right;
+    line-height: 40px;
+    text-align: center;
+}
+
+.container .Shopping-Cart {
+    z-index: 10;
+    width: 120px;
+    color: #b0b0b0;
+    margin-left: 15px;
+    background: #424242;
+    position: relative;
+}
+
+.container .Shopping-Cart a {
+    display: block;
+    line-height: 40px;
+
+}
+
+.container .Shopping-Cart a:hover {
+    background: #fff;
+    color: #FF6700;
+}
+
+.container .Shopping-Cart a:hover em {
+    background: url("../img/xuebitu.png") no-repeat 0 -22px;
+}
+
+
+.container .Shopping-Cart em {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -9px;
+    background: url("../img/xuebitu.png") no-repeat 0 0;
+}
+.container .Shopping-Cart a:hover .Cart {
+    height: 100px;
+}
+
+.container .Shopping-Cart .Cart {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 316px;
+    color: #424242;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    -webkit-transition: height 0.3s linear;
+    transition: height 0.3s linear;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.container .Shopping-Cart .Cart .font {
+    margin-top: 20px ;
+}
+
+.container .Login-Register {
+    width: 74px;
+}
+
+/*--------------------------2--------------------------------*/
+.next-nav {
+    /*height: 100px;*/
+    min-width: 1226px;
+    position: relative;
+}
+
+.next-nav .logo {
+    display: inline-block;
+    margin-right: 7px;
+    width: 55px;
+    height: 55px;
+    background: url("../img/xuebitu.png") no-repeat 0 -44px;
+    margin-top: 22px;
+    float: left;
+    cursor: pointer;
+}
+
+.next-nav .header-nav {
+    float: left;
+}
+
+.next-nav .header-nav img {
+    float: left;
+    width: 165px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.next-nav .header-nav ul {
+    float: left;
+    width: 850px;
+    height: 100px;
+    text-align: center;
+}
+
+.next-nav .header-nav ul li {
+    float: left;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    line-height: 100px;
+    padding: 0 13px;
+
+}
+
+.next-nav .header-nav ul li a {
+    font-size: 16px;
+    color: #333;
+}
+
+.next-nav .header-nav ul li a:hover {
+    color: #ff6700;
+}
+
+.next-nav .content {
+    z-index: 5;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 229px;
+    width: 100%;
+    border-top: none;
+    background: #fff;
+    /*overflow: hidden;*/
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
+    -webkit-transition: -webkit-box-shadow .2s;
+    transition: box-shadow .2s;
+}
+
+.next-nav .content ul li {
+    float: left;
+    width: 180px;
+    text-align: center;
+    padding: 35px 12px 0;
+    position: relative;
+}
+
+.next-nav .content ul li .div1 a {
+    display: block;
+
+}
+
+.next-nav .content ul li .div1 a img {
+    width: 100%;
+    height: 100%;
+}
+
+.next-nav .content ul li .div1 {
+    width: 160px;
+    height: 110px;
+    text-align: center;
+    margin: 0 auto 16px;
+}
+
+.next-nav .content ul li .div2 a {
+    color: #333;
+}
+
+.next-nav .content ul li .div2 {
+    line-height: 20px;
+}
+
+.next-nav .content ul li p {
+    color: #ff6700;
+    line-height: 20px;
+}
+
+.next-nav .content ul li.first:before {
+    display: none;
+}
+
+.next-nav .content ul li:before {
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 1px;
+    height: 100px;
+    content: "";
+    background-color: #e0e0e0;
+}
+
+/*---------2.5-----------*/
+.next-nav .container .right {
+    position: relative;
+    float: right;
+    width: 296px;
+    margin-top: 25px;
+}
+
+.next-nav .container .right form {
+    position: relative;
+    width: 296px;
+    height: 50px;
+}
+
+.next-nav .container .right form:hover input {
+    border-color: #b0b0b0;
+}
+
+.next-nav .container .right .input1 {
+    width: 225px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.next-nav .container .right .input2 {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #e0e0e0;
+    height: 50px;
+    width: 50px;
+    background: url("../img/xuebitu.png") no-repeat -1px -110px;
+}
+
+.next-nav .container .right .input2:hover {
+    background: url("../img/xuebitu.png") no-repeat -56px 0;
+    border: 1px solid #ff6700;
+    overflow: hidden;
+
+}
+
+.next-nav .container .right .search .search-text, .next-nav .container .right .search .search-but {
+    border-color: #ff6700;
+}
+
+.next-nav .container .right .box1 {
+    position: absolute;
+    top: 18px;
+    right: 62px;
+
+}
+
+.next-nav .container .right .box1 a {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 5px;
+    background: #eee;
+    color: #757575;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.next-nav .container .right .box1 a:hover {
+    background: #ff6700;
+    color: #fff;
+}
+
+/*-----------------------3-----------------------------------*/
+/*-----3.5菜单栏-----*/
+.vital {
+    width: 100%;
+}
+
+.vital .container1 {
+    position: relative;
+    height: 460px;
+}
+
+.vital .container .site-list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    padding: 20px 0;
+    width: 234px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.vital .site-list .firstU {
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+
+.vital .site-list .firstU .firstI {
+    height: 42px;
+    line-height: 42px;
+
+}
+
+.vital .site-list .firstU .firstI em {
+    float: right;
+    position: relative;
+    top: 13px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/xuebitu10.png") no-repeat 0 -30px;
+}
+
+.vital .site-list .firstU .firstI .cont {
+    display: block;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.vital .site-list .firstU .firstI .cont:hover {
+    background: #ff6700;
+}
+
+.vital .site-list .firstU .firstI .cont:hover em {
+    background: url("../img/jian.png") no-repeat 0 0;
+}
+
+.vital .site-list .firstU .firstI:hover .site-right {
+    display: block;
+}
+
+/*-----3.5菜单栏右拉部分-----*/
+.vital .site-list .firstU .firstI .site-right {
+    display: none;
+    position: absolute;
+    top: -20px;
+    left: 234px;
+    height: 458px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.vital .site-list .firstU .firstI .site-right1 {
+    width: 795px;
+}
+
+.vital .site-list .firstU .firstI .site-right2 {
+    width: 530px;
+}
+
+.vital .site-list .firstU .firstI .site-right ul {
+    float: left;
+    width: 265px;
+    z-index: 10;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li {
+    width: 265px;
+    height: 76px;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li div {
+    position: relative;
+    padding: 18px 0 18px 20px;
+    width: 245px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li div .A {
+    float: left;
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li div .B {
+    font-size: 14px;
+    color: #333;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li div .btn {
+    position: absolute;
+    right: 10px;
+    top: 26px;
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    font-style: normal;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    text-align: center;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li div .B:hover {
+    color: #ff6700;
+}
+
+.vital .site-list .firstU .firstI .site-right ul li div .btn:hover {
+    background: #FF6700;
+    color: #fff;
+}
+
+/*-----3.5轮播图部分-----*/
+
+.vital .container .carousel {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    cursor: pointer;
+}
+
+.vital .container .carousel .five div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 460px;
+
+    z-index: 0;
+    opacity: 0;
+    filter: 'alpha(opacity=0)';
+}
+
+.vital .container .carousel div img {
+    width: 100%;
+    height: 100%;
+}
+
+.vital .container .carousel ul {
+    z-index: 10;
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+    overflow: hidden;
+}
+
+.vital .container .carousel ul li {
+    float: left;
+    margin: 0 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.vital .container .carousel a {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 41px;
+    height: 69px;
+}
+
+.vital .container .carousel .btnLeft {
+    left: 234px;
+    background: url('../img/icon-slides.png') no-repeat -84px 50%;
+}
+
+.vital .container .carousel .btnRight {
+    right: 0;
+    background: url('../img/icon-slides.png') no-repeat -125px 50%;
+}
+
+.vital .container .carousel .btnLeft:hover {
+    background: url('../img/icon-slides.png') no-repeat 0 50%;
+}
+
+.vital .container .carousel .btnRight:hover {
+    background: url('../img/icon-slides.png') no-repeat -42px 50%;
+}
+
+.vital .container .carousel ul li:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.vital .container .carousel ul .bg {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+/*-------------------4-----------------------------*/
+/*---4.left---*/
+.fourBigBox {
+    width: 100%;
+    height: 170px;
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.fourBigBox .leftBox {
+    float: left;
+    width: 234px;
+    height: 170px;
+}
+
+.fourBigBox .leftBox ul {
+    margin: 0;
+    padding: 3px;
+    text-align: center;
+    background: #5f5750;
+    overflow: hidden;
+}
+
+.fourBigBox .leftBox ul li {
+    position: relative;
+    float: left;
+    width: 76px;
+    height: 82px;
+}
+
+.fourBigBox .leftBox ul li a {
+    display: block;
+    padding-top: 18px;
+    color: #fff;
+    opacity: 0.7;
+    filter: Alpha(Opacity=70);
+}
+
+.fourBigBox .leftBox ul li em {
+    display: block;
+    position: relative;
+    left: 26px;
+    margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
+    background: url('../img/xuebitu.png') no-repeat -55px -55px;
+}
+
+.fourBigBox .leftBox ul li:before, .fourBigBox .leftBox ul li:after {
+    position: absolute;
+    content: "";
+    background: #665e57;
+}
+
+.fourBigBox .leftBox ul li:before {
+    top: -1px;
+    left: 6px;
+    width: 64px;
+    height: 1px;
+}
+
+.fourBigBox .leftBox ul li.top:before {
+    display: none;
+}
+
+.fourBigBox .leftBox ul li:after {
+    top: 6px;
+    left: 1px;
+    width: 1px;
+    height: 70px;
+}
+
+.fourBigBox .leftBox ul li.left:after {
+    display: none;
+}
+
+.fourBigBox .leftBox ul li a:hover {
+    color: #fff;
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+}
+
+.fourBigBox .leftBox ul li a:hover em {
+    background: url('../img/xuebitu.png') no-repeat -55px -83px;
+}
+
+/*---4.right---*/
+.fourBigBox .rightBox {
+    float: left;
+    margin-left: 14px;
+    width: 978px;
+    height: 170px;
+}
+
+.fourBigBox .rightBox ul {
+    overflow: hidden;
+}
+
+.fourBigBox .rightBox ul li {
+    float: left;
+    margin-left: 15px;
+    width: 316px;
+    height: 170px;
+    cursor: pointer;
+}
+
+.fourBigBox .rightBox ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.fourBigBox .rightBox ul li.first {
+    margin-left: 0;
+}
+
+/*-------------------5----------------------------*/
+.publicTop {
+    position: relative;
+    height: 58px;
+}
+
+h2 {
+    line-height: 58px;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
+}
+
+.publicDiv {
+    position: absolute;
+    right: 0;
+}
+
+.box5 .top div {
+    width: 71px;
+    height: 25px;
+    top: 24px;
+}
+
+.box5 .top div a {
+    float: left;
+    display: block;
+    width: 34px;
+    height: 22px;
+    border: 1px solid #e0e0e0;
+}
+
+.box5 .top div .btnLeft {
+    border-right: none;
+    background: url('../img/xuebitu2.png') no-repeat 0 0;
+}
+
+.box5 .top div .btnRight {
+    background: url('../img/xuebitu2.png') no-repeat -54px -42px;
+}
+
+/*--*/
+.timer .bottom {
+
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.timer .bottom ul {
+    width: 2480px;
+    height: 340px;
+}
+
+.box5 .bottom ul {
+    overflow: hidden;
+    -webkit-transition: margin-left 0.5s ease;
+    transition: margin-left 0.5s ease;
+}
+
+.bottom ul li {
+    float: left;
+    width: 234px;
+    height: 300px;
+    text-align: center;
+    z-index: 1;
+}
+
+.timer .bottom ul li {
+    margin-right: 14px;
+    padding-top: 39px;
+    border-top: 1px solid;
+    background: #fafafa;
+}
+
+.timer .bottom ul .item-1 {
+    border-top-color: #ffac13;
+}
+
+.timer .bottom ul .item-2 {
+    border-top-color: #83c44e;
+}
+
+.timer .bottom ul .item-3 {
+    border-top-color: #2196f3;
+}
+
+.timer .bottom ul .item-4 {
+    border-top-color: #e53935;
+}
+
+.timer .bottom ul .item-5 {
+    border-top-color: #00c0a5;
+}
+
+.timer .bottom ul li .bg {
+    width: 160px;
+    height: 166px;
+    margin: 0 auto 20px;
+}
+
+.bottom ul li .bg {
+    display: block;
+
+}
+
+.timer .bottom ul li .bg img {
+    width: 160px;
+    height: 160px;
+}
+
+.bottom ul li h3 {
+    margin: 0 20px 3px;
+}
+
+.timer .bottom ul li h3 a {
+    color: #212121;
+}
+
+.bottom ul li h3 a {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bottom ul li .p1 {
+    height: 18px;
+    margin: 0 20px 12px;
+    color: #b0b0b0;
+}
+
+.bottom ul li .p2 {
+    color: #ff6709;
+}
+
+/*------------------------------6------------------------------------*/
+/*-------6-box1--------*/
+.maxBox {
+    padding-top: 60px;
+    background: #f5f5f5;
+}
+
+.maxBox .box1 .top8 div {
+    top: 0;
+    width: 92px;
+    height: 58px;
+}
+
+.maxBox .top8 div a {
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.maxBox .top8 div a em {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/xuebitu3.png") no-repeat 0 0;
+}
+
+.maxBox .top8 div a:hover {
+    color: #ff6700;
+}
+
+.maxBox .top8 div a:hover em {
+    background: url("../img/xuebitu3.png") no-repeat -40px 0;
+}
+
+/*------------------------*/
+.maxBox .bottom .left {
+    float: left;
+    width: 234px;
+}
+
+.maxBox .bottom .left .leftA {
+    height: 614px;
+}
+
+.maxBox .bottom .left a {
+    display: inline-block;
+    width: 234px;
+    margin-bottom: 14px;
+    background: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+
+}
+
+.maxBox .bottom .left a img {
+    width: 100%;
+    height: 100%;
+}
+
+.maxBox .bottom .left a:hover, .maxBox .bottom ul li:hover {
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate3d(0, -2px, 0);
+    transform: translate3d(0, -2px, 0);
+}
+
+.maxBox .bottom .right {
+    display: block;
+}
+
+.maxBox .bottom .right ul li {
+    position: relative;
+    background: #fff;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.maxBox .bottom .right ul {
+    display: block;
+}
+
+.maxBox .bottom ul li h3 a {
+    color: #333;
+}
+
+.maxBox .bottom .right {
+    float: left;
+    width: 992px;
+}
+
+/*------6.box2--------*/
+
+.maxBox .box2 {
+    width: 100%;
+    height: 686px;
+    margin-bottom: 8px;
+}
+
+.maxBox .publicDiv {
+    top: 0;
+}
+
+.maxBox .publicDiv ul {
+    padding: 19px 0 0;
+}
+
+.maxBox .publicDiv ul li {
+    float: left;
+    padding-bottom: 3px;
+    margin: 0 0 0 30px;
+    font-size: 16px;
+    color: #424242;
+    border-bottom: 2px solid #f5f5f5;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-color .5s;
+    transition: border-color .5s;
+    cursor: pointer;
+}
+
+.maxBox .publicDiv ul li.active {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+.maxBox .bottom .left a {
+    height: 300px;
+}
+
+.maxBox .bottom ul li .bg {
+    width: 150px;
+    height: 156px;
+    margin: 0 auto 12px;
+}
+
+.maxBox .bottom ul li .bg img {
+    width: 150px;
+    height: 150px;
+}
+
+.maxBox .bottom .right ul li {
+    height: 246px;
+    padding: 34px 0 20px;
+}
+
+.maxBox .bottom .right ul li.last-1 {
+    position: relative;
+    height: 93px;
+    padding: 34px 0 15px;
+}
+
+.maxBox .bottom .right ul li.last-1 div {
+    position: absolute;
+    right: 20px;
+    top: 32px;
+    width: 80px;
+    height: 80px;
+}
+
+.maxBox .bottom .right ul li.last-1 div a {
+    display: block;
+}
+
+.maxBox .bottom .right ul li.last-1 div img {
+    width: 80px;
+    height: 80px;
+}
+
+.maxBox .bottom .right ul li.last-1 h3 {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+
+}
+
+.maxBox .bottom .right ul li.last-1 h3 a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 94px;
+    height: 21px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.maxBox .bottom .right ul li.last-1 .p2 {
+    margin-top: 40px;
+    margin-left: 32px;
+    text-align: start;
+}
+
+.maxBox .bottom .right ul li.last-1 .more {
+    display: block;
+    margin: 0 110px 0 30px;
+    font-size: 18px;
+    color: #333;
+    text-align: start;
+}
+
+.maxBox .bottom .right ul li.last-1 .p1 {
+    margin: 0 110px 0 30px;
+    text-align: start;
+}
+
+.maxBox .bottom .right ul li.last-1 div .moreA {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    width: 49px;
+    height: 49px;
+    background: url("../img/xuebitu.png") no-repeat -57px -114px;
+
+}
+
+.maxBox .bottom .right ul li .hid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 234px;
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.maxBox .bottom .right ul li .hid a {
+    display: block;
+    padding: 8px 30px;
+}
+
+.maxBox .bottom .right ul li .hid a span {
+    display: block;
+    text-align: start;
+
+}
+
+.maxBox .bottom .right ul li .hid a .span1 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.maxBox .bottom .right ul li .hid a .span2 {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.maxBox .bottom .right ul li:hover .hid {
+    /*------li使用hover-------*/
+    height: 76px;
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+    z-index: 2;
+}
+
+.maxBox .bottom .right .two {
+    display: none;
+}
+
+.maxBox .bottom .right ul li .smallTop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    width: 64px;
+    height: 20px;
+    margin-left: -32px;
+    line-height: 20px;
+    color: #fff;
+    background: red;
+    transition: height 0.2s linear 0s;
+}
+
+/*---------------*/
+.box5 .bottom {
+    overflow: hidden;
+}
+
+.maxBox .box5 .bottom ul {
+    width: 3720px;
+}
+
+.maxBox .box5 .bottom ul li {
+    height: 300px;
+    margin-right: 14px;
+    background: #fff;
+    margin-bottom: 14px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+
+}
+
+.maxBox .box5 .bottom ul li .bg {
+    width: 140px;
+    height: 145px;
+    margin: 0 auto;
+    padding: 40px 0 14px;
+}
+
+.maxBox .box5 .bottom ul li .bg img {
+    width: 140px;
+    height: 140px;
+}
+
+.maxBox .box5 .bottom ul li h3 a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.maxBox .box5 .bottom ul li .p1 {
+    color: #ff6700;
+    margin-bottom: 10px;
+}
+
+.maxBox .box5 .bottom ul li .p2 {
+    color: #757575;
+
+}
+/*------------maxBoxbox6------------------------*/
+.maxBox .box678 .bottom .right{
+    width: 1240px;
+    /*overflow: hidden;*/
+}
+.maxBox .box6 .bottom ul li{
+    height: 415px;
+}
+.maxBox .box678 .bottom ul li{
+    margin-left: 0;
+    margin-right: 14px;
+    width: 296px;
+    padding: 0;
+}
+.maxBox .box6 .bottom ul li .bg{
+    width: 296px;
+    height: 226px;
+    margin: 0 0 22px;
+}
+.maxBox .box6 .bottom ul li .bg img{
+    width: 296px;
+    height: 220px;
+
+}
+
+.maxBox .box6 .bottom ul li .pa{
+    height: 72px;
+    margin: 0 28px 22px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    overflow: hidden;
+}
+.maxBox .box6 .bottom ul li .pa a{
+    color: #333;
+    display: block;
+    text-align: left;
+}
+.maxBox .box6 .bottom ul li .pb{
+    margin: 0 28px 8px;
+    color: #b0b0b0;
+    text-align: left;
+    height: 18px;
+}
+.maxBox .box6 .bottom ul li div{
+    margin: 0 30px;
+    text-align: left;
+}
+.maxBox .box6 .bottom ul li div a{
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.maxBox .box6 .bottom ul li div span{
+    color: #e0e0e0;
+    margin: 5px;
+}
+
+.maxBox .box6 .bottom ul li div p{
+    display: inline-block;
+    color: #ff6700;
+}
+
+/*-----------------------box7------------------------*/
+.maxBox .box7 .bottom .firstUl .linearTop{
+    height: 374px;
+    padding: 45px 0 0;
+    color: #ffac13;
+
+}
+.maxBox .box7 .bottom .firstUl .linearTop .title{
+    margin: 0 10px 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.maxBox .box7 .bottom .firstUl .linearTop ul{
+    width: 1184px;
+    height: 340px;
+    transition: margin-left 0.5s ease;
+    /*overflow: hidden;*/
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li{
+    margin: 0;
+    float: left;
+    width: 296px;
+    height: 340px;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li h4{
+    margin: 0 20px 5px;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li h4 a{
+    display: block;
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li .p-1{
+    margin: 0 48px 10px;
+    height: 40px;
+
+    line-height: 20px;
+    overflow: hidden;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li .p-1 a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li:hover{
+    transform: none;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li .p-2{
+    height: 21px;
+    margin: 0 10px 15px;
+
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li .p-2 a{
+    color: #333;
+}
+.maxBox .box7 .bottom .firstUl .linearTop ul li .li-a{
+    display: block;
+    width: 216px;
+    height: 154px;
+    margin: 0 auto;
+}
+
+.maxBox .box7 .bottom .firstUl .linearTop ul li .li-a img{
+    width: 216px;
+    height: 154px;
+}
+.maxBox .box7 .impD{
+    width: 296px;
+    height: 340px;
+    overflow: hidden;
+}
+.maxBox .box7 .bDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 296px;
+    height: 30px;
+}
+.maxBox .box7 .bDiv span{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+    /*text-align: left;*/
+    background-color: #b0b0b0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    cursor: pointer;
+    vertical-align: middle;
+ }
+.maxBox .box7 .bDiv span:hover{
+    background-color :#ff6700;
+}
+.maxBox .box7 .bDiv span.bg1{
+    border: 2px solid #ff6700;
+    background:#fff;
+}
+.maxBox .box7 .btnLeft,.maxBox .box7 .btnRight{
+    display: block;
+    position: absolute;
+    top:50%;
+    margin-top: -42px;
+    width: 20px;
+    height: 48px;
+    opacity: 0;
+    filter:Alpha(Opacity=0);
+    z-index:5;
+}
+.maxBox .box7 .btnLeft{
+    left: 0;
+    background: url("../img/xuebitu4.png")no-repeat 0 0;
+}
+.maxBox .box7 .btnRight{
+    right: 0;
+    background: url("../img/xuebitu4.png")no-repeat -20px 0;
+}
+.maxBox .box7 .bottom .firstUl .linearTop:hover .btnLeft,.maxBox .box7 .bottom .firstUl .linearTop:hover .btnRight{
+    opacity: 1;
+    filter:Alpha(Opacity=100);
+}
+
+.maxBox .box7 .btnLeft:hover{
+    background: url("../img/xuebitu4.png")no-repeat -40px 0;
+}
+
+.maxBox .box7 .btnRight:hover{
+    background: url("../img/xuebitu4.png")no-repeat -60px 0;
+}
+
+/*------------------box8------------------------------*/
+
+.maxBox .box678 .bottom .right{
+    width: 1240px;
+}
+.maxBox .box8 .bottom ul li{
+    height: 285px;
+}
+.maxBox .box8{
+    /*margin-bottom: 60px;*/
+}
+
+.maxBox .box8 .bottom ul li .bg{
+    position: relative;
+    width: 296px;
+    height: 180px;
+    margin: 0 0 28px;
+}
+.maxBox .box8 .bottom ul li .bg img{
+    width: 296px;
+    height: 180px;
+
+}
+.maxBox .box8 .bottom ul li .bg em{
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 36px;
+    height: 24px;
+    background: url("../img/xuebitu5.png")no-repeat 0 0;
+}
+.maxBox .box8 .bottom ul li .bg:hover em{
+    background: url("../img/xuebitu5.png")no-repeat -36px 0;
+}
+.maxBox .box8 .bottom ul li h3{
+    margin: 0 0 8px;
+}
+.maxBox .box8 .bottom ul li h3 a:hover{
+    color: #ff6700;
+}
+.maxBox .box8 .bottom ul li p{
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+/*-------------------------------------------*/
+.endBox1 .container {
+    width: 1226px;
+    height: 272px;
+}
+.endBox1 .first{
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.endBox1 .first ul li.aLi{
+    border-left:none;
+}
+.endBox1 .first ul li{
+    float: left;
+    width: 19.8%;
+    height: 25px;
+    border-left: 1px solid #e0e0e0;
+
+    text-align: center;
+}
+.endBox1 .first ul li a{
+    position: relative;
+    font-size: 16px;
+    line-height: 25px;
+    color: #616161;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+.endBox1 .first ul li a em{
+    position: absolute;
+    left: -30px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
+    background: url("../img/xuebitu6.png")no-repeat 0 0;
+}
+.endBox1 .first ul li a:hover{
+    color: #ff6700;
+}
+.endBox1 .first ul li a:hover em{
+    background: url("../img/xuebitu6.png")no-repeat -25px 0;
+}
+
+.endBox1 .twoDiv{
+    padding: 40px 0;
+}
+.endBox1 .twoDiv dl{
+    float: left;
+    width: 160px;
+    height: 112px;
+    margin: 0;
+}
+.endBox1 .twoDiv dl .dt1{
+    margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+
+.endBox1 .twoDiv dl dd{
+    display: block;
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+.endBox1 .twoDiv dl dd a{
+    color: #757575;
+}
+.endBox1 .twoDiv dl dd a:hover{
+    color: #FF6700;
+}
+.endBox1 .twoDiv div{
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+
+.endBox1 .twoDiv div .p1{
+    margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.endBox1 .twoDiv div .p2{
+    margin: 0 0 16px;
+    font-size: 12px;
+}
+.endBox1 .twoDiv div a{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    background: url("../img/xuebitu6.png")no-repeat -50px 0;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.endBox1 .twoDiv div a:hover{
+    background: url("../img/xuebitu6.png")no-repeat 0 -30px;
+}
+/*----------------------------------------------*/
+.endBox2{
+    margin: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.endBox2 .logo2{
+    float: left;
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+    background: url(../img/logo-footer.png) no-repeat 50% 50%;
+}
+.endBox2 .div1{
+    float: left;
+    color: #b0b0b0;
+}
+.endBox2 .div1 .p1{
+    width: 738px;
+    text-align: center;
+    margin: 0;
+}
+.endBox2 .div1 .p1 a{
+    color: #757575;
+    font-size: 12px;
+}
+.endBox2 .div1 .p1 a:hover{
+    color: #FF6700;
+}
+.endBox2 .div1 .p1  span{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+.endBox2 .div1 p{
+    line-height: 18px;
+}
+.endBox2 .div1 .p2 a{
+    color: #b0b0b0;
+}
+.endBox2 .div1 .p2 a:hover{
+    color: #FF6700;
+}
+.endBox2 .fourLogo{
+    float: right;
+    height: 28px;
+    margin: 4px 0 0;
+}
+
+.endBox2 .fourLogo img{
+    width: auto;
+    height: 28px;
+    margin-left: 7px;
+}
+
+.endBox2 .finalBox{
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../img/slogan2016.png) no-repeat center 0;
+}
+
+
+
+

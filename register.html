@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/zhuCe.css"/>
+</head>
+<body>
+<div class="bigBox">
+    <div class="container">
+        <div class="warp">
+            <div class="inner">
+                <div class="two">
+                    <em></em>
+                    <p>注册小米账号</p>
+                </div>
+                <div class="three">
+                    <div class="three-inner">
+                        <form action="">
+                            <div class="div1" id="div1">
+                                <input type="text" readonly="true" value="中国(+86)"/>
+                                <em></em>
+                            </div>
+                            <div class="div2" style="display: none" id="div2">
+                                <div>常用</div>
+                                <ul>
+                                    <li>
+                                        <span class="aa">中国</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">中国</span>
+                                        <span class="bb">+86</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">台湾</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">日本</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">美国</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                </ul>
+                                <div class="div3">A</div>
+                                <ul>
+                                    <li>
+                                        <span class="aa">中国</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">中国</span>
+                                        <span class="bb">+86</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">台湾</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">日本</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">美国</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+                                    <li>
+                                        <span class="aa">英国</span>
+                                        <span class="bb">+55</span>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <input type="text" placeholder="请输入手机号码"/>
+                            <input class="input1" type="text" placeholder="图片验证"/>
+                            <a href="javascript:;"><img src="img/getCode.jpg" alt=""/></a>
+                            <input type="button" value="立即注册" id="submit"/>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="four">
+                    <p>
+                        点击“立即注册”，即表示您同意并愿意遵守小米
+                        <a href="javascript:;">用户协议</a>
+                        和
+                        <a href="javascript:;">隐私政策</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="next">
+            <div class="div1">
+                <a href="javascript:;">简体</a>
+                <span>|</span>
+                <a href="javascript:;">繁体</a>
+                <span>|</span>
+                <a href="javascript:;">English</a>
+                <span>|</span>
+                <a href="javascript:;">常见问题</a>
+            </div>
+            <p>
+                <span>
+                    小米公司版权所有-京ICP备10046444-
+                    <a href="javascript:;">
+                        <span><img src="img/ghs.png" alt=""/></span>京公网安备11010802020134号
+                    </a>
+                    -京ICP证110507号
+                </span>
+            </p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var submit = document.getElementById("submit");
+    submit.onclick = function () {
+//       window.open('小米.html')
+        window.location.href = "小米.html"
+    };
+
+    var div1 = document.getElementById("div1");
+    var div2 = document.getElementById("div2");
+
+    div1.onclick = function () {
+        if(div2.style.display === "none"){
+            div2.style.display = "block";
+            return;
+        }
+        div2.style.display = "none";
+    };
+
+
+
+</script>
